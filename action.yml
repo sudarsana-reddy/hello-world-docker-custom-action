@@ -1,10 +1,10 @@
 name: "Hello World"
 description: 'Hello World'
 inputs:
-  who-to-greet: 
+  WHOTOGREET: 
     description: 'Whom to greet'
     required: false 
-    
+
 runs:
   using: "docker"
   image: "Dockerfile"
