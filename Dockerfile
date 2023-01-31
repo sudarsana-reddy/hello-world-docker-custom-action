@@ -1,4 +1,4 @@
-FROM node:16.10-alpine
+FROM node:18.13-alpine
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 WORKDIR /app
