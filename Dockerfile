@@ -4,8 +4,11 @@ FROM node:18.13-alpine
 WORKDIR /app
 COPY . /app
 
-RUN npm install -g appcenter-cli@2.10.1
+RUN npm install -g appcenter-cli@2.10.1 \
+    && apk update \
+    && apk add git \
+    && apk add bash
 
-RUN chmod 777 /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
 
 ENTRYPOINT [ "/bin/bash", "/app/entrypoint.sh" ]
