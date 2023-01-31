@@ -8,5 +8,4 @@ RUN npm install -g appcenter-cli@2.10.1
 
 RUN chmod u+x /app/entrypoint.sh
 
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT [ "/app/entrypoint.sh" ]
