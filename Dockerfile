@@ -11,4 +11,4 @@ RUN npm install -g appcenter-cli@2.10.1 \
 
 RUN chmod +x /app/entrypoint.sh
 
-ENTRYPOINT [ "/bin/bash", "/app/entrypoint.sh" ]
+ENTRYPOINT [ "/app/entrypoint.sh" ]
